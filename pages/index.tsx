@@ -22,7 +22,7 @@ const Table = () => {
 
     const intervalId = setInterval(() => {
     
-      fetch("https://www.tangkapdata2.my.id/get_log/101")
+      fetch("https://www.tangkapdata2.my.id/get_log")
       .then(
         response => response.json()
 
