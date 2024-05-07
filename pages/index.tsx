@@ -20,7 +20,7 @@ const Table = () => {
 
   useEffect(() => {
 
-    // const intervalId = setInterval(() => {
+    const intervalId = setInterval(() => {
     
       fetch("https://www.tangkapdata2.my.id/get_log/101")
       .then(
@@ -33,7 +33,7 @@ const Table = () => {
           }
          )
          
-        // }, 2000);
+        }, 5000);
         
       }, []);
 
