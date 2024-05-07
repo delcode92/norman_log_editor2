@@ -20,11 +20,12 @@ const Table = () => {
 
   useEffect(() => {
 
-    const intervalId = setInterval(() => {
+    // const intervalId = setInterval(() => {
     
-      fetch("https://tangkapdata2.my.id:8082/get_log/101")
+      fetch("https://www.tangkapdata2.my.id/get_log/101")
       .then(
         response => response.json()
+
         )
       .then(
           data => {
@@ -32,9 +33,12 @@ const Table = () => {
           }
          )
          
-        }, 2000);
+        // }, 2000);
         
       }, []);
+
+  console.log("data table ========>");
+  console.log(dataTable);
 
   const handleDelete =  async (id: string) => {
     
@@ -97,7 +101,9 @@ const Table = () => {
           </tr>
         </thead>
         <tbody>
+          
           {
+            
           dataTable.map((item, index) => (
             <tr key={item.id}>
               <td>{index+1}</td>
