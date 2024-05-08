@@ -107,7 +107,7 @@ const Table = () => {
           dataTable.map((item, index) => (
             <tr key={item.id}>
               <td>{index+1}</td>
-              <td>{item.log_time}</td>
+              <td>{new Date(item.log_time).toLocaleString()}</td>
               <td>{item.no_perkara}</td>
               <td>Jhon</td>
               <td>{item.log_text}</td>
